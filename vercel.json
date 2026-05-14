@@ -1,5 +1,15 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/taskmaster-frontend.html" }
+  "version": 2,
+  "builds": [
+    {
+      "src": "taskmaster-frontend.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/taskmaster-frontend.html"
+    }
   ]
 }
